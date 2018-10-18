@@ -22,8 +22,9 @@ class Tile {
         traversable = startTraversable;
     }
     
-    bool isPlayerStandingOnTile(Sprite player) {
-        if (player.getX() == sprite.getX() && player.getY() == sprite.getY()) {
+    bool isPlayerStandingOnTile(Player player) {
+        if (player.getSprite().getX() > sprite.getX() && player.getSprite().getX() < sprite.getX() + sprite.getWidth() &&
+            player.getSprite().getY() < sprite.getY() && player.getSprite().getY() > sprite.getY() + sprite.getHeight()) {
             return true;
         } else {
             return false;

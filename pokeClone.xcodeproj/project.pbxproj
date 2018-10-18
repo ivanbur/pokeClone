@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		BC212794216EE4E400D8FD6A /* TileClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC212793216EE4E400D8FD6A /* TileClass.cpp */; };
 		BC212796216EEA2500D8FD6A /* BuildingClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC212795216EEA2500D8FD6A /* BuildingClass.cpp */; };
+		BC2AA8CA21781BB0000B417F /* SpriteClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC2AA8C921781BB0000B417F /* SpriteClass.cpp */; };
+		BC2AA8D3217827D5000B417F /* test.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC2AA8D2217827D5000B417F /* test.png */; };
 		BC6FF72521659F19009527E7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC6FF72421659F19009527E7 /* main.cpp */; };
 		BC6FF72C2165AA00009527E7 /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6FF72B2165AA00009527E7 /* SDL2_image.framework */; };
 		BC6FF72E2165AA0D009527E7 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6FF72D2165AA0D009527E7 /* SDL2.framework */; };
@@ -18,18 +20,21 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		BC6FF71F21659F19009527E7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 7;
 			files = (
+				BC2AA8D3217827D5000B417F /* test.png in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BC212793216EE4E400D8FD6A /* TileClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TileClass.cpp; sourceTree = "<group>"; };
 		BC212795216EEA2500D8FD6A /* BuildingClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BuildingClass.cpp; sourceTree = "<group>"; };
+		BC2AA8C921781BB0000B417F /* SpriteClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpriteClass.cpp; sourceTree = "<group>"; };
+		BC2AA8D2217827D5000B417F /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = test.png; path = Resources/test.png; sourceTree = "<group>"; };
 		BC6FF72121659F19009527E7 /* pokeClone */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pokeClone; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC6FF72421659F19009527E7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		BC6FF72B2165AA00009527E7 /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
@@ -53,6 +58,7 @@
 		BC6FF71821659F19009527E7 = {
 			isa = PBXGroup;
 			children = (
+				BC2AA8D2217827D5000B417F /* test.png */,
 				BC6FF72D2165AA0D009527E7 /* SDL2.framework */,
 				BC6FF72B2165AA00009527E7 /* SDL2_image.framework */,
 				BC6FF72321659F19009527E7 /* pokeClone */,
@@ -75,6 +81,7 @@
 				BC6FF72F2165ADB7009527E7 /* PlayerClass.cpp */,
 				BC212793216EE4E400D8FD6A /* TileClass.cpp */,
 				BC212795216EEA2500D8FD6A /* BuildingClass.cpp */,
+				BC2AA8C921781BB0000B417F /* SpriteClass.cpp */,
 			);
 			path = pokeClone;
 			sourceTree = "<group>";
@@ -137,6 +144,7 @@
 			files = (
 				BC6FF72521659F19009527E7 /* main.cpp in Sources */,
 				BC6FF7302165ADB7009527E7 /* PlayerClass.cpp in Sources */,
+				BC2AA8CA21781BB0000B417F /* SpriteClass.cpp in Sources */,
 				BC212796216EEA2500D8FD6A /* BuildingClass.cpp in Sources */,
 				BC212794216EE4E400D8FD6A /* TileClass.cpp in Sources */,
 			);

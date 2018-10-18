@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include "SDL2/SDL.h"
 #include "SDL2_image/SDL_image.h"
-#include "PlayerClass.cpp"
+#include "TileClass.cpp"
 
 class Building {
     private:
@@ -20,11 +20,15 @@ class Building {
         sprite = Sprite(image, startX, startY, numberRows, numberFrames, sizeOfClipWidth, sizeOfClipHeight);
     }
     
-    bool isPlayerEntering(Sprite player) {
-        if (player.getX() == sprite.getX() && player.getY() == sprite.getY()) {
+    bool isPlayerEntering(Player player) {
+        if ((player.getSprite().getX() > sprite.getX() + sprite.getX() / 2 && player.getSprite().getX() < player.getSprite().getWidth() + sprite.getX() + sprite.getX() / 2) && player.getSprite().getY() == sprite.getY() + sprite.getHeight()) {
             return true;
         } else {
             return false;
         }
+    }
+    
+    Sprite getSprite() {
+        return sprite;
     }
 };
